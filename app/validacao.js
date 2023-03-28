@@ -26,6 +26,7 @@ function verificaValorValido(chute) {
         `<div>O número secreto é maior <i class="fa-solid fa-angle-up"></i></div>`
     }
 
+
 }
 
 function numeroNãoPermitido(numero) {
