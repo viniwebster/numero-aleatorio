@@ -1,5 +1,14 @@
+const gameOver = 'game over'
+
 function verificaValorValido(chute) {
     const numero = +chute;
+
+    if(chute == gameOver){
+        document.body.innerHTML = `
+        <h2> GAME OVER </h2>
+        <button id="jogar-novamente" class="btn-jogar"> Jogar Novamente</button>`;
+        document.body.style.backgroundColor = "red";
+    }
 
     if(chuteÉInvalido(numero)){
         elementoChute.innerHTML += '<div> Valor inválido</div>'
@@ -25,8 +34,7 @@ function verificaValorValido(chute) {
         elementoChute.innerHTML += 
         `<div>O número secreto é maior <i class="fa-solid fa-angle-up"></i></div>`
     }
-
-
+   
 }
 
 function numeroNãoPermitido(numero) {
